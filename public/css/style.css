@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward');
 
 :root {
     --main-bg-color: #1D1000;
@@ -27,7 +28,7 @@ Format mobile
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        margin: 10px 10px;;
+        margin: 10px 10px;
         position: static;
     }
 
@@ -59,11 +60,16 @@ Format mobile
         margin-bottom: 20px;
     }
 
-    nav {
+    .title-detail {
+      margin-bottom: 0;
+
+    }
+
+    .top-nav {
         display: none;
     }
 
-    .nav-icon{
+    .nav-icon {
         width: 35px;
         height: 30px;
         margin: 10px 30px;
@@ -72,7 +78,7 @@ Format mobile
         display: inline-block;
       }
 
-      .nav-icon span{
+      .nav-icon span {
         background-color: var(--main-bg-color);
         position: absolute;
         border-radius: 2px;
@@ -134,22 +140,119 @@ Format mobile
         margin: 20px auto;
       }
 
+      /* Lien catalogue page d'accueil */
       .booklet-link {
-        background-color: #F3D5B5;
+        background-color: var(--secondary-bg-color);
         border-radius: 20px;
         align-self: center;
-        padding: 25px 25%;
+        width: 85%;
+        margin: 20px 20px;
+        padding: 25px 20px;
         text-align: center;
       }
 
-      article {
-        background-color: #F3D5B5;
+      /* Fil d'ariane */
+      .breadcrumb {
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 20px 0;
+      }
+      
+      .breadcrumb ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 .25rem;
+        content: ">";
+      }
+
+      .introduction {
+        background-color: var(--secondary-bg-color);
         border-radius: 40px;
-        margin: 20px 20px;
+        max-width: 85%;
+        margin: 25px auto;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      article {
+        background-color: var(--secondary-bg-color);
+        border-radius: 40px;
         padding: 25px 20px;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .published {
+        border-radius: 20px;
+      }
+
+      .article-title {
+        margin-top: 20px;;
+      }
+
+      .article-title-detail {
+        border-radius: 20px;
+      }
+
+      .description p {
+        margin-bottom: 10px;
+      }
+
+      .description p span {
+        font-weight: 800;
+      }
+
+/*       article p {
+        /* margin: 0 auto; */
+        /* width: 95% */
+      } */
+
+      article a {
+        margin: 10px auto;
       }
 
       .content-img {
         border-radius: 20px;
+      }
+
+      footer {
+        background-color: var(--tertiary-bg-color);
+        border-radius: 10px;
+        margin: 0 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .fa-arrow-up {
+        height: 20px;
+      }
+
+      .bottom-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        width: 88%;
+      }
+    
+      .bottom-nav a {
+        padding-bottom: 5px;
       }
 }

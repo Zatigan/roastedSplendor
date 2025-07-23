@@ -41,6 +41,10 @@ p {
   text-decoration: none;
 }
 
+.div-logo {
+  z-index: 0;
+}
+
 @media screen and (max-width: 320px) {
   header {
     background-color: var(--secondary-bg-color);

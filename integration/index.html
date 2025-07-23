@@ -5,44 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/css/reset.css" />
     <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/burger.css" />
     <title>Éclats torréfiés - Accueil</title>
   </head>
   <body>
     <header>
       <div class="div-logo" id="div-logo">
-        <img
-          class="logo"
-          src="../public/img/logo.svg"
-          alt="Grains de café stylisés"
-          aria-label="Grains de café stylisés"
-        />
-        <h1>Aux Éclats torréfiés</h1>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="../public/img/logo.svg"
+            alt="Grains de café stylisés"
+            aria-label="Grains de café stylisés"
+          />
+          <h1>Aux Éclats torréfiés</h1>
+        </a>
       </div>
 
-      <nav>
-        <div class="navbar">
-          <div class="container nav-container">
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-
-            <div class="menu-items">
-              <li><a href="index.html">Accueil</a></li>
-              <li>
-                <a
-                  href="boutique.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Notre boutique</a
-                >
-              </li>
-              <li><a href="catalogue.html">Nos cafés</a></li>
-              <li><a href="contact.html">Nous contacter</a></li>
-            </div>
-          </div>
-        </div>
+      <nav class="navbar">
+        <input class="checkbox" type="checkbox" name="" id="menu-toggle" />
+        <label class="hamburger-lines" for="menu-toggle">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </label>
+        <ul class="menu-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li>
+            <a href="boutique.html" target="_blank" rel="noopener noreferrer"
+              >Notre boutique</a
+            >
+          </li>
+          <li><a href="catalogue.html">Nos cafés</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
       </nav>
     </header>
 

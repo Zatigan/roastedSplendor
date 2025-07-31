@@ -1,7 +1,17 @@
 {
+  "name": "s09-o-coffee-zatigan",
+  "version": "1.0.0",
+  "description": "## Information du projet",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "dotenv": "^17.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

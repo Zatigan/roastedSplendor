@@ -4,11 +4,11 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-//* Used to navigate on website
+/* //* Used to navigate on website
 const router = require("./app/router");
 
 //*Routing
-app.use(router);
+app.use(router); */
 
 //* Path for dirname use
 const path = require("path");
@@ -17,7 +17,7 @@ const path = require("path");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "app/views"));
 
-//* Path for public elem
+//* Path for public elements
 app.use(express.static("public"));
 
 //* Page 404 tbd
@@ -30,5 +30,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servier is running on ${process.env.BASE_URL}:${port} !`);
+  console.log(`Server is running on ${process.env.BASE_URL}:${port} !`);
 });

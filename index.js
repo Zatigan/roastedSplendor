@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 //* Used to navigate on website
-const router = require("./app/router.js");
+const router = require("./app/router");
 
 //* Routing
 app.use(router);

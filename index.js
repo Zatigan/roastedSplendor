@@ -4,11 +4,11 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-/* //* Used to navigate on website
-const router = require("./app/router");
+//* Used to navigate on website
+const router = require("./app/router.js");
 
-//*Routing
-app.use(router); */
+//* Routing
+app.use(router);
 
 //* Path for dirname use
 const path = require("path");
@@ -25,10 +25,7 @@ app.use(express.static("public"));
 //* Port for server
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
+//* Start server
 app.listen(port, () => {
   console.log(`Server is running on ${process.env.BASE_URL}:${port} !`);
 });

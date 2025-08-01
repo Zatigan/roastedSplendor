@@ -8,4 +8,16 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.get('/boutique', (req, res) => {
+    res.render('boutique');
+});
+
+router.get('/catalogue', (req, res) => {
+    res.render('catalogue');
+});
+
+router.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
 module.exports = router;

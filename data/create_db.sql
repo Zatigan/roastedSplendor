@@ -30,4 +30,12 @@ INSERT INTO "coffee" ("name", "description", "reference", "origin", "kilo_price"
 ('Panamanian Geisha','Café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.', 795501340, 'Panama', 42.00, 'Fruité', TRUE ), 
 ('Peruvian Arabica','Café équilibré avec des notes de chocolat, une acidité modérée et un corps velouté.', 954589100, 'Pérou', 19.40, 'Chocolaté', FALSE ), 
 ('Hawaiian Kona','Café rare au goût riche, une acidité douce et des nuances subtiles.', 958090105, 'Hawaï', 55.75, 'Doux', FALSE ), 
-('Nicaraguan Maragogipe','Café avec des notes de fruits, une acidité vive et un corps plein.', 691550753, 'Nicaragua', 28.60, 'Fruité', FALSE );
+('Nicaraguan Maragogipe','Café avec des notes de fruits, une acidité vive et un corps plein.', 691550753, 'Nicaragua', 28.60, 'Fruité', FALSE ),
+('Costa Rican Naranjo','Café de terroir nous révèle des saveurs d’amande, de noisette ainsi que des notes florales et boisées.', 465973216, 'Costa Rica', 31.80, 'Fruité', TRUE ),
+('Lojan Sierra','Café aux notes de raisins et de noisette. Une tasse équilibrée et raffinée', 379843219, 'Equateur', 41.20, 'Doux', FALSE ),
+('Kayanzan Inka','Café avec des notes de caramel et d''agrumes.', 798432023, 'Equateur', 30.40, 'Fruité', FALSE ),
+('Ugandan Zombo','Café des notes fruitées de pomme et de raisin', 563942138, 'Ouganda', 44.90, 'Fruité', TRUE ),
+('Ethiopian Sidamo','Café aux notes florales et fruitées, avec une acidité vive.', 981489743, 'Éthiopie', 29.99, 'Acide', TRUE ),
+('Balinese Toya','Café séduisant avec ses notes de chocolat, de miel et des notes finales de fruits rouges.', 479321586, 'Indonésie', 40.30, 'Doux', TRUE ),
+('Dominican Iguana','Café aux notes gourmandes de noisettes et de chocolat au lait, avec des notes de caramel et fruitées avec du citron jaune.', 146973248, 'République Dominicaine', 31.80, 'Doux', FALSE ),
+('Papuan Raggiana','Café aux notes de noix, avec une belle acidité, des saveurs d''abricot et une pointe de rhubarbe', 974235862, 'Papouasie-Nouvelle-Guinée', 33.00, 'Acide', TRUE );

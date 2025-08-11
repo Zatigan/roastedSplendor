@@ -5,8 +5,8 @@ const dataMapper = {
 async getThreeCoffees() {
     const result = await client.query("SELECT * FROM coffee ORDER BY date DESC LIMIT 3");
     return result.rows;
-}
+    }
 
 };
 
-module.exports = dataMapper;
+export default dataMapper;

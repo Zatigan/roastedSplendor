@@ -8,10 +8,11 @@ import { Router } from "express";
 
 const router = Router();
 
+import homePageCtrl from './controllers/homePageCtrl.js';
+
 //* Route to home page
-router.get('/', (req, res) => {
-    res.render('index');
-});
+router.get('/', homePageCtrl.lastCoffees);
+
 
 router.get('/boutique', (req, res) => {
     res.render('boutique');

@@ -26,23 +26,19 @@
       <a class="booklet-link" href="catalogue.html">Notre catalogue</a>
 
       <section class="coffee-samples">
-        <% for (const index in coffees) { %>
-        <article>
-          <img
-            src="./img/753915650.png"
+        <% coffees.forEach(coffee => { %>
+          <article>
+            <img
+            src="./img/<%= coffee.reference %>.png"
             class="coffee-samples-img"
             alt="Grains de café expresso"
             aria-label="Grains de café expresso"
-          />
-          <h2 class="coffee-samples-title"><% coffee.title %>></h2>
-          <p>
-            Description : Café fort et concentré préparé en faisant passer de
-            l'eau chaude à travers du café finement moulu.
-          </p>
-          <a href="detail.html">Découvrir</a>
-        </article>
-        <% } %>
-
+            />
+            <h2 class="coffee-samples-title"><%= coffee.name %></h2>
+            <p><%= coffee.description  %></p>
+            <a href="detail.html">Découvrir</a>
+          </article>
+        <% }) %>
  
 <!-- ajouter le footer -->
  <%- include('partials/footer')  %>

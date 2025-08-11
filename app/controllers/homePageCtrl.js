@@ -7,3 +7,5 @@ const homePageCtrl = {
         res.render('index', { coffees: query });
     }
 }
+
+export default homePageCtrl;

@@ -1,60 +1,34 @@
-<%- include('partials/head')  %>
+<%- include('partials/head') %>
 
-    <title>Éclats torréfiés - Accueil</title>
+<title>Éclats torréfiés - Accueil</title>
 
-<%- include('partials/header')  %>
+<%- include('partials/header') %>
 
-        <section>
-            <article class="breadcrumb">
-                <ul>
-                    <li>Accueil</li>
-                    <li>Le catalogue</li>
-                </ul>
-            </article>  
-        </section>
+<section>
+  <article class="breadcrumb">
+    <ul>
+      <li>Accueil</li>
+      <li>Le catalogue</li>
+    </ul>
+  </article>
+</section>
 
-        <section>
-            <article>
-                <h2>Expresso</h2>
-                <p>Description : Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</p>
-                <p>Prix au kilo : 20.99 €</p>
-                <p>Caractéristique principale : Corsé</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            <article>
-                <h2>Columbian</h2>
-                <p>Description : Café doux et lisse avec un profil de saveur de noisette.</p>
-                <p>Origine : Colombie</p>
-                <p>Caractéristique principale : Doux</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            <article>
-                <h2>Ethiopian Yirgacheffe</h2>
-                <p>escription : Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</p>
-                <p>Origine : Éthiopie</p>
-                <p>Caractéristique principale : Fruité</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            <article>
-                <h2>Brazilian Santos</h2>
-                <p>Description : Café doux et lisse avec un profil de saveur de noisette.</p>
-                <p>Origine : Brésil</p>
-                <p>Caractéristique principale : Doux</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            <article>
-                <h2>Guatemalan Antigua</h2>
-                <p>Description : Café corsé avec des nuances chocolatées et une pointe d'épice.</p>
-                <p>Origine : Guatemala</p>
-                <p>Caractéristique principale : Corsé</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            <article>
-                <h2>Kenyan AA</h2>
-                <p>Description : Café complexe connu pour son acidité rappelant le vin et ses saveurs fruitées.</p>
-                <p>Origine : Kenya</p>
-                <p>Caractéristique principale : Acide</p>
-                <a href="/detail">Plus d'informations</a>
-            </article>
-            
-  <%- include('partials/footer')  %>
+<section>
+  <% coffees.forEach(coffee => { %>
+
+  <article>
+    <h2><%= coffee.name %></h2>
+    <img
+      src="./img/<%= coffee.reference %>.png"
+      class="coffee-samples-img"
+      alt="Grains de café expresso"
+      aria-label="Grains de café expresso"
+    />
+    <p><%= coffee.description%></p>
+    <p>Prix au kilo : <%= coffee.kilo_price %> €</p>
+    <p>Caractéristique principale : <%= coffee.main_characteristic %></p>
+    <a href="/detail">Plus d'informations</a>
+  </article>
+
+  <% }) %> <%- include('partials/footer') %>
+</section>

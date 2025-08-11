@@ -1,11 +1,11 @@
-import dataMapper from '../datamapper/datamapper.js';
+import dataMapper from "../datamapper/datamapper.js";
 
 const homePageCtrl = {
-    async lastCoffees(req, res) {
-        const query = await dataMapper.getThreeCoffees();
+  async latestCoffees(req, res) {
+    const query = await dataMapper.getThreeCoffees();
 
-        res.render('index', { coffees: query });
-    }
-}
+    res.render("index", { coffees: query });
+  },
+};
 
 export default homePageCtrl;

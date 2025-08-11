@@ -5,7 +5,14 @@ const dataMapper = {
 async getThreeCoffees() {
     const result = await client.query("SELECT * FROM coffee ORDER BY date DESC LIMIT 3");
     return result.rows;
-    }
+},
+
+async getAllCoffees() {
+    const result = await client.query("SELECT * FROM coffee");
+    return result.rows;
+}
+
+
 
 };
 

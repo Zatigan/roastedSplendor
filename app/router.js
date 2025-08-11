@@ -8,26 +8,24 @@ import { Router } from "express";
 
 const router = Router();
 
-import homePageCtrl from './controllers/homePageCtrl.js';
+import homePageCtrl from "./controllers/homePageCtrl.js";
+import catalogueController from "./controllers/catalogueController.js";
 
 //* Route to home page
-router.get('/', homePageCtrl.lastCoffees);
+router.get("/", homePageCtrl.latestCoffees);
 
-
-router.get('/boutique', (req, res) => {
-    res.render('boutique');
+router.get("/boutique", (req, res) => {
+  res.render("boutique");
 });
 
-router.get('/catalogue', (req, res) => {
-    res.render('catalogue');
+router.get("/catalogue", catalogueController.getAllCoffees);
+
+router.get("/contact", (req, res) => {
+  res.render("contact");
 });
 
-router.get('/contact', (req, res) => {
-    res.render('contact');
-});
-
-router.get('/detail', (req, res) => {
-    res.render('detail');
+router.get("/detail", (req, res) => {
+  res.render("detail");
 });
 
 export default router;

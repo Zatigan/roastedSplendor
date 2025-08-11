@@ -1,21 +1,23 @@
-require("dotenv").config();
+import 'dotenv/config'
+//* In commonJS => require("dotenv").config();
 
 //* Express to handle server
-const express = require("express");
+import express from "express";
+//* In commonJS => const express = require("express");
 const app = express();
 
 //* Used to navigate on website
-const router = require("./app/router");
+import router from './app/router.js';
 
 //* Routing
 app.use(router);
 
-//* Path for dirname use
-const path = require("path");
+import { join } from 'path';
+//* Path for dirname use in commonJS => import path from "path";
 
 //* Define view engine + path for views
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "app/views"));
+app.set("views", join(import.meta.dirname, "/app/views"));
 
 //* Path for public elements
 app.use(express.static("public"));

@@ -1,7 +1,12 @@
 //*Express import + Router() so it can be used and route to the right files
 
-const express = require('express');
-const router = express.Router();
+import express from "express";
+//* Using commonJS => const express = require('express');
+
+import { Router } from "express";
+//* Using commonJS => const router = express.Router();
+
+const router = Router();
 
 //* Route to home page
 router.get('/', (req, res) => {
@@ -21,7 +26,7 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/detail', (req, res) => {
-res.render('detail');
+    res.render('detail');
 });
 
-module.exports = router;
+export default router;

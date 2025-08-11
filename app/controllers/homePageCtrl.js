@@ -1,7 +1,9 @@
-import client from "../database";
+import dataMapper from '../datamapper/datamapper.js';
 
 const homePageCtrl = {
-    lastCoffees(req, res) {
-        client.query
+    async lastCoffees(req, res) {
+        const query = await dataMapper.getThreeCoffees();
+
+        res.render('index', { coffees: query });
     }
 }

@@ -8,5 +8,5 @@ const client = new Client(process.env.PG_URL);
 client.connect();
 
 //*Exporting the client variable in order to use it in other files
-//*Using default export allow to customize the import name in other files
+//*Using default export allows to customize the import name in other files
 export default client;

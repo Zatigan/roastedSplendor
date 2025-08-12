@@ -24,8 +24,9 @@ router.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-router.get("/detail", (req, res) => {
-  res.render("detail");
+router.get("/coffee/:name", (req, res) => {
+  /* console.log(req.params.name); */
+  res.render("article");
 });
 
 export default router;

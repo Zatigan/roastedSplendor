@@ -27,7 +27,7 @@
     <p><%= coffee.description%></p>
     <p>Prix au kilo : <%= coffee.kilo_price %> €</p>
     <p>Caractéristique principale : <%= coffee.main_characteristic %></p>
-    <a href="/detail">Plus d'informations</a>
+    <a href="/article/:<%= coffee.name %>">Plus d'informations</a>
   </article>
 
   <% }) %> <%- include('partials/footer') %>

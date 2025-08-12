@@ -133,6 +133,9 @@ p {
 
   .coffee-samples-img {
     border-radius: 40px 10px;
+    object-fit: cover;
+    height: 20rem;
+    /*width: 25rem ?*/
   }
 
   .description p {

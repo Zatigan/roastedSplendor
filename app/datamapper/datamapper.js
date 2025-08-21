@@ -15,13 +15,16 @@ const dataMapper = {
 
   /*Trouver le moyen de récupérer l'info du café à cibler */
   async getOneCofffee() {
-    const result = await client.query("SELECT * FROM coffees WHERE name = $1");
+    const result = await client.query(
+      "SELECT * FROM coffees WHERE 
+    );
     return result.rows;
   },
 
   /*passez l'info de l'url avec query params ou autre ?*/
   async coffeeByCategory() {
-    const result = await client.query("SELECT * FROM coffee WHERE ca");
+    const result = await client.query("SELECT * FROM coffee category.id = $1",
+      [category.name]);
   },
 };
 

@@ -8,7 +8,11 @@ const catalogueController = {
   },
 
   async getCoffeeByCategory(req, res) {
-    const query = await dataMapper.coffeeByCategory(req.params.categoryId);
+    // Getting required category in URL
+    const id = req.params.id;
+
+    // Sending needed datas to dataMapper to make SQL request
+    const query = await dataMapper.coffeeByCategory(id);
 
     res.render("catalogue", { coffees: query });
   },

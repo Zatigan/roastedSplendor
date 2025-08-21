@@ -19,7 +19,7 @@ router.get("/boutique", (req, res) => {
 });
 
 router.get("/catalogue", catalogueController.getAllCoffees);
-router.get("/catalogue", catalogueController.getCoffeeByCategory);
+router.get("/catalogue/:id", catalogueController.getCoffeeByCategory);
 
 router.get("/contact", (req, res) => {
   res.render("contact");

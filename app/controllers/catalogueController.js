@@ -6,6 +6,12 @@ const catalogueController = {
 
     res.render("catalogue", { coffees: query });
   },
+
+  async getCoffeeByCategory(req, res) {
+    const query = await dataMapper.coffeeByCategory(req.params.categoryId);
+
+    res.render("catalogue", { coffees: query });
+  },
 };
 
 export default catalogueController;
